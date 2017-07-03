@@ -1,0 +1,18 @@
+<div class="header">
+  <p>Tasks</p>
+  <span>
+    <p>5</p>
+  </span>
+</div>
+<div class="content_list">
+  <div class="content" *ngFor="let task of tasksData">
+    <span class="sign"><p>{{ task.sign }}</p></span>
+    <div class="text">
+      <p class="title">{{ task.text }}</p>
+      <p class="status"><i class="material-icons">timer</i>{{ task.status }}</p>
+    </div>
+    <span class="options">
+      <i class="material-icons">more_vert</i>
+    </span>
+  </div>
+</div>

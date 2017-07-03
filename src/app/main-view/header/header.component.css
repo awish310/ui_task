@@ -1,0 +1,81 @@
+:host {
+    flex-basis: 100%;
+    height: 10vh;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    display: flex;
+}
+
+.left-buttons {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.right-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    height: 55%;
+    padding: 0;
+    border: none;
+    background-color:rgba(0,0,0,0);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-buttons button {
+    flex-basis: 17%;
+}
+
+.right-buttons .addBtn {
+    flex-basis: 35%;
+    border: 1px solid #3366ff;
+    border-radius: 2rem;
+    background-color: #3366ff;
+    color: #fff;
+}
+
+.right-buttons .addBtn p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.right-buttons .accountBtn img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.right-buttons .accountBtn img:before {
+  content: "";
+  padding-top: 100%;
+}
+
+.left-buttons button {
+    flex-basis: 7%;
+}
+
+.left-buttons button .menuBtn {
+    display: flex;
+}
+
+.left-buttons .menuBtn .arrow {
+   font-size: 1rem;
+   color: #8080ff;
+   direction: ltr;
+}
+
+@media screen and (max-width: 769px) {
+    .left-buttons, .right-buttons {
+        flex: 1;       
+    }
+}

@@ -1,0 +1,21 @@
+<div class="header">
+  <p>Messages</p>
+  <span>
+    <p>2</p>
+  </span>
+</div>
+<div class="content_list">
+  <div class="content" *ngFor="let message of messagesData">
+    <span class="image"><img src="{{ message.image }}" alt=""></span>
+    <div class="body">
+      <p class="title">{{ message.from }} <span class="status">{{ message.status }}</span></p>
+      <p class="text">{{ message.text }}</p>
+    </div> 
+    <div class="options">
+      <i class="material-icons">reply</i>
+      <i class="material-icons">settings</i>
+    </div>   
+  </div> 
+</div>
+
+

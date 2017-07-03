@@ -1,0 +1,14 @@
+<div class="header">
+  <p>Activity</p>
+  <span>
+    <p>10</p>
+  </span>
+</div>
+<div class="content_list">
+  <div class="content" *ngFor="let activity of activitiesData">
+    <span class="image"><img src="{{ activity.image }}" alt=""></span>
+    <div class="body">
+      <p class="title">{{ activity.from }} <span class="action">{{ activity.action }}</span> {{ activity.project }}</p>
+      <p class="status"><i class="material-icons">timer</i>{{ activity.status }}</p>
+    </div>  
+</div>

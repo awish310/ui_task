@@ -1,0 +1,65 @@
+:host {
+    flex-basis: 43%;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.header .title {
+    flex: 4;
+    margin: 0; 
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #999;  
+}
+
+.header .selectBtn {
+    flex: 2;
+    padding: 0;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 2rem;
+    background-color:rgba(0,0,0,0);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .selectBtn .select_content, .header .selectBtn i{
+    color: #999;
+    margin: 0;
+}
+
+.header .selectBtn .select_content .option {
+    color: #000;
+    font-weight: bold;
+}
+
+.graph {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph h5 {
+    margin: 0;
+}
+
+@media screen and (max-width: 769px) {
+    :host {
+        flex-basis: 45%;
+    }
+
+    .header .title, .header .selectBtn {
+        flex: 1;
+    }
+}
